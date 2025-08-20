@@ -1,9 +1,9 @@
-import React, { useState } from "react"; // Import React and useState hook for state management
+  import React, { useState } from "react"; // Import React and useState hook for state management
 
 // Define the ProductCreatePage component which receives two props:
 // onAddProduct - function to add a product to the shared list
 // onNavigate - function to change the current page
-function ProductCreate({ onAddProduct }) {
+function ProductCreate({ onAddProduct, onNavigate}) {
   // Define state variables for each form input field using useState hook
   const [productName, setProductName] = useState(""); // State for product name
   const [productCode, setProductCode] = useState(""); // State for product code
@@ -165,7 +165,7 @@ function ProductCreate({ onAddProduct }) {
       </button>
 
       {/* Back button triggers navigation back to Main Page */}
-      <button style={backButtonStyle}>
+      <button onClick={() => onNavigate("main")} style={backButtonStyle} >
         Back to Main Page
       </button>
     </div>
