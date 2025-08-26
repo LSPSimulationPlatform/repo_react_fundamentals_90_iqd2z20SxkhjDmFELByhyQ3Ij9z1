@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #007BFF;
+      color: white;
+      width: 100%;
+    }
+    header h1 { margin: 0; font-size: 2em; }
+    header p { margin: 5px 0 0; }
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 30px;
+      width: 100%;
+    }
+    .menu-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .menu-card:hover { transform: translateY(-5px); }
+    .menu-card a {
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .menu-card span { font-size: 2em; display: block; margin-bottom: 10px; }
+    footer { margin: 20px; font-size: 0.9em; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Library Information System</h1>
+    <p>This is your central navigation page. Use the menu below to explore key sections.</p>
+  </header>
+
+  <div class="menu-container">
+    <div class="menu-card">
+      <span>📚</span>
+      <a href="book-list.html">Book List Page</a>
+    </div>
+    <div class="menu-card">
+      <span>🔍</span>
+      <a href="book-detail.html">Book Detail Page (Sample)</a>
+    </div>
+    <div class="menu-card">
+      <span>👤</span>
+      <a href="user-list.html">User List Page</a>
+    </div>
+    <div class="menu-card">
+      <span>📖</span>
+      <a href="loan-history.html">Loan History Page (Sample)</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Project Info: This demo illustrates layout, linking structure, responsive design, and user-friendly navigation.</p>
+  </footer>
+</body>
+</html>

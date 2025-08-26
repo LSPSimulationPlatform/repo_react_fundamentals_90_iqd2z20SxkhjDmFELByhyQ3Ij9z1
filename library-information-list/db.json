@@ -1,0 +1,44 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Les Misérables",
+      "author": "Victor Hugo",
+      "status": "available"
+    },
+    {
+      "id": 2,
+      "title": "Ali and Nino",
+      "author": "Kurban Said",
+      "status": "borrowed"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Ali Mammadov",
+      "borrowedCount": 2
+    },
+    {
+      "id": 2,
+      "name": "Leyla Hasanova",
+      "borrowedCount": 1
+    }
+  ],
+  "credits": [
+    {
+      "id": 1,
+      "userId": 1,
+      "bookId": 1,
+      "borrowDate": "2025-08-01",
+      "returnDate": null
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "bookId": 2,
+      "borrowDate": "2025-08-15",
+      "returnDate": "2025-08-22"
+    }
+  ]
+}
